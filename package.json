@@ -1,0 +1,33 @@
+{
+  "name": "ir-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "setup-production": "npm install",
+    "start": "node backend/server",
+    "server": "nodemon backend/server",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-mutex": "^0.4.0",
+    "axios": "^1.2.1",
+    "cheerio": "^1.0.0-rc.12",
+    "colors": "^1.4.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "fake-useragent": "^1.0.1",
+    "https": "^1.0.0",
+    "mongoose": "^6.8.0",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "nodemon": "^2.0.20"
+  }
+}
