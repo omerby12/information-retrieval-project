@@ -8,6 +8,10 @@ import { Semaphore } from 'async-mutex';
 axios.defaults.timeout = 30000;
 axios.defaults.httpsAgent = new https.Agent({ keepAlive: true });
 
+export const getGlovesAll = asyncHandler(async (req, res) => {
+  res.json({ test: 'test' });
+});
+
 export const getGlovesCutNegative = asyncHandler(async (req, res) => {
   // initialized with the first webpage to visit
 
